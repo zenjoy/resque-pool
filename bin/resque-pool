@@ -3,5 +3,6 @@
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
+require 'yajl' if defined?(Yajl)
 require 'resque/pool/cli'
 Resque::Pool::CLI.run
